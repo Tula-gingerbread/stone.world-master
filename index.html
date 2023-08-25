@@ -22,8 +22,9 @@
             color: rgb(255, 153, 0);
         }
         img {
-            width: 385px; 
-            height: 385px;
+            width: 380px; 
+            height: 380px;
+            border-radius: 25px;
         }
         .logo {
             float: right;
@@ -38,6 +39,24 @@
         width: 1920px;
         height: 65px;
         background-color: rgb(65, 74, 126);
+
+    }
+    #logo {
+        position: fixed;
+        top: 250px;
+        left: 1150px;
+        border: 0 solid #45467e;
+        border-radius: 25px;
+        animation: border-appear 5s forwards;
+    }
+
+    @keyframes border-appear {
+        0% {
+            border-width: 0;
+        }
+        100% {
+            border-width: 5px;
+        }
     }
     </style>
 </head>
@@ -52,11 +71,16 @@
     <a href="https://stoneworldru.trademc.org/" style="background-color: #62a831; color: #FFFFFF; padding: 15px 20px; border-radius: 10px; text-decoration: none;">Minecraft</a>
 </div>
 </div>
+<div style="margin-top: -18px;">
+<div style="padding-left: 0px; padding-right: 1123px;">
+    <a href="https://tula-gingerbread.github.io/NewYearCounter/" style="background-color: rgb(255, 0, 0); color: #FFFFFF; padding: 15px 20px; border-radius: 10px; text-decoration: none;">Счетчик до нового года</a>
+</div>
+</div>
 </div>
 
 <body>
     <div style="margin-top: 200px;">
-    <div style="font-size: 20px;">
+    <div style="font-size: 23px;">
     <div class="container">
     <div style="padding-left: 0px; padding-right: 1000px;">
     <h1><br>Stone.<span class="orange">World</span> - проект игровых серверов</h1>
@@ -68,6 +92,9 @@
     Также вы можете просто написать в поиске игры "Stone.World"</p><br>
     </div>
     </div>
+    </div>
+    </div>
+    <img id="logo" src="https://cdn.discordapp.com/attachments/1137322724465840189/1144352848063238194/Logo-Stone.png" alt="Лого">
 </body>
 
 </html>
